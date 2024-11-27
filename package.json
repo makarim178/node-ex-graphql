@@ -1,0 +1,33 @@
+{
+	"name": "node-ex-graphql",
+	"version": "1.0.0",
+	"description": "A server side Express JS to create graphQL queries",
+	"main": "app.js",
+	"scripts": {
+		"start": "node app.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@bitbucket.org/mirkarim/node-ex-graphql.git"
+	},
+	"keywords": [
+		"nodeJS",
+		"ExpressJS",
+		"GraphQL",
+		"Mongoose"
+	],
+	"author": "Mir Ashiful Karim",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://bitbucket.org/mirkarim/node-ex-graphql/issues"
+	},
+	"homepage": "https://bitbucket.org/mirkarim/node-ex-graphql#readme",
+	"dependencies": {
+		"express": "^4.21.1",
+		"express-graphql": "^0.12.0",
+		"graphql": "^15.9.0",
+		"lodash": "^4.17.21",
+		"mongoose": "^8.8.1"
+	}
+}
