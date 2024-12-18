@@ -1,25 +1,15 @@
-const {
-	GraphQLObjectType,
-	GraphQLID,
-	GraphQLString
-} = require('graphql');
+const { GraphQLObjectType, GraphQLID, GraphQLString } = require('graphql');
 
-const { CategoryEnumType } = require('./categoryEnumType');
+const { CategoryType } = require('./categoryType');
 
 const SkillType = new GraphQLObjectType({
-    name: 'skill',
-    fields: () => ({
-        id: { type: GraphQLID },
-        name: { type: GraphQLString },
-        category: { type: CategoryEnumType },
-        categoryValue: {
-            type: GraphQLString,
-            resolve({ category }, args) {
-                return category;
-            }
-        },
-        url: { type: GraphQLString }
-    })
+  name: 'skill',
+  fields: () => ({
+    id: { type: GraphQLID },
+    name: { type: GraphQLString },
+    category: { type: CategoryType },
+    url: { type: GraphQLString },
+  }),
 });
 
 module.exports = { SkillType };
